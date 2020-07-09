@@ -1,0 +1,539 @@
+/*
+================
+FIXED HEADER (top)
+================
+*/
+
+.header {
+    
+    display: flex;
+    position: fixed;
+    border: 1px solid rgb(223, 223, 223);
+    height: 8vh;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;    
+    background-color: rgb(255, 255, 255);
+
+}
+
+img.middle {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 270px;
+    cursor: pointer;
+}
+
+.header > .left {
+    display: flex;    
+    align-items: center;
+    align-content: center;
+    text-align: center;    
+}
+
+.header > .left > .fa-bars::before {
+    font-size: 1rem;    
+}
+
+.header > .left > * {    
+color: black;
+font-size: 0.8rem;
+text-decoration: none;
+text-align: center;
+padding: 1em;
+}
+
+.header > .right {
+padding: 1em;
+}
+
+.header > .fa-user::before {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+
+/*
+================
+FIXED HEADER END
+================
+*/
+
+/*
+================
+FIXED COVID (bottom)
+================
+*/
+
+.covid_fixed {
+    
+    display: flex;
+    position: fixed;
+    border: 1px solid rgb(223, 223, 223);
+    height: 8vh;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;    
+    background-color: rgb(255, 255, 255);
+    font: franklin-regular;
+    font-weight: 700;
+    font-size: 0.8rem;
+
+}
+
+.covid_fixed > p{
+    font: franklin-regular;
+    font-weight: 700;
+    font-size: 0.8rem;
+
+}
+
+/*
+================
+FIXED COVID END
+================
+*/
+
+
+/*
+================
+MAIN CONTENT
+================
+*/
+
+/* PARAGRAPHS AND HEADERS STYLING */
+
+h1 {
+    font-family: "cheltenham-italic", serif;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: "imperial-regular-700";
+    font-weight: 700;
+    font-size: 1.25rem;
+
+}
+
+p {
+    font-family: "imperial-regular", serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+
+
+
+figcaption {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 1em;
+}
+
+figcaption > a {
+    font-size: 0.8rem;
+    color: #888;
+}
+/* STYLE END */
+
+main {
+margin-top: 9vh;
+    
+}
+
+.under_navBar {
+    display: flex;
+    font-family: franklin-regular;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    justify-content: end;
+
+}
+
+.under_navBar:active,
+.under_navBar:link,
+.under_navBar:{
+    color: black;
+    text-decoration: none;
+}
+
+.ad_top {
+    justify-self: center;
+    cursor: pointer;
+}
+
+
+main  > .mainArticle {
+    display: grid;
+    
+    gap: 50px 20px;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin: 100px auto;
+}
+/*  IMAGEN PRINCIPAL  */
+.top_image > img {
+    width: 100%;
+}
+
+main  > .mainArticle > * {
+    grid-column: 2 / span 1;
+
+}
+
+main  > .mainArticle > p, h2 {
+    margin: 0 10em 0 10em;
+
+}
+/* APLICA PARA LA DEL TOP Y BOTTOM*/
+.horizontal_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0em 12.5em 0em 12.5em
+}
+.horizontal_bar > time {
+    font-size: 0.8rem;
+    font-family: 'franklin-regular';
+    font-weight: 300;
+}
+
+.horizontal_bar > .right {
+    display: flex;
+    align-items: center;
+}
+
+
+.horizontal_bar > .right > a.fa {
+    display: inline-block;
+    /*
+    border-radius: 30px;
+    box-shadow: 0px 0px 2px #888;
+    */
+    padding: 0.5em 0.6em;
+}
+
+.horizontal_bar > .right >
+a.fa.fa-bookmark-o::before,
+a.fa.fa-comment-o::before {
+
+font-size: 1.7rem;
+border: none;
+box-shadow: none;
+}
+
+
+/*
+================
+GRID PICTURES AND TEXT
+================
+*/
+.grid_pictures {
+    background: white url('../images/grid_img1.png');
+    background-size: cover;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 2rem);
+    
+    background-repeat: no-repeat;
+    background-size: 80%;
+    height: 42em;
+    background-position-x: center;
+    background-position-y: 5em;
+
+    
+}
+.grid_pictures > h2 {
+    margin: 0 0 0 5.5em;
+
+}
+.grid_pictures > .subH {
+    font-size: 0.9rem;
+    line-height: 1rem;
+    color: rgb(102, 102, 102);
+    margin: 0 0 0 7.7em;
+    width: 63em;
+
+}
+
+.text_grid > figure > figcaption {
+    font-family: 'franklin-regular';
+    font-weight: 300;
+    font-size: 0.85rem;
+    line-height: 1rem;
+    width: 13rem;
+}
+
+.text_grid > figure > figcaption > b{
+    font-family: 'franklin-regular';
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+
+.text_grid {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 8em 1em;
+    margin: 7.5em auto;
+}
+
+/*
+================
+GRID PICTURES AND TEXT END
+================
+*/
+
+.bottom_text {
+    color: gray;
+    font-size: 0.7rem;
+    margin: 0 12.5rem 0 12.5rem !important;
+}
+
+
+.horizontal_bar > button{
+    background-color: rgb(86, 123, 149);
+border: 1px solid rgb(50, 104, 145);
+border-radius: 5px;
+font-family: franklin-regular;
+font-weight: 700;
+width: 23em;
+height: 3em;
+color: white;
+font-size: 0.85rem;
+cursor: pointer;
+}
+
+.horizontal_bar > button:hover{
+    background-color: rgb(125, 155, 177);
+}
+
+/*
+================
+MAIN CONTENT END
+================
+*/
+
+/*
+LAST ARTICLE IMAGE
+*/
+
+.bottom_image {
+    display: grid;
+    justify-items: center;
+}
+
+.bottom_image > img{
+    width: 45em;
+}
+
+.bottom_image > figcaption{
+    width: 53em;
+}
+/*
+LAS ARTICLE IMAGE END
+*/
+
+/*
+================
+BOTTOM ARTICLES
+================
+*/
+
+.bottom_ads {
+    display: grid;
+    
+    grid-template-columns: 2fr auto;
+    gap: 4rem;
+    
+    border-top: 1px solid black;
+}
+
+.articles > figure {
+    display: flex;
+    flex-direction: column;
+}
+
+.articles > figure > figcaption{
+    align-self: end;
+}
+
+.articles > figure > h3{
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.articles > figure > img {
+    width: 240px;
+}
+
+.articles > figure > figcaption {
+    font-family: cheltenham-small;
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.articles > figure > h3 {
+    font-family: cheltenham-regular;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.articles > figure > time {
+    font-family: franklin-regular;
+    font-weight: 300;
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.bottom_ads > .col1 > .articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.bottom_ads > .col1 > h2 {
+grid-column: 1/-1;
+margin: 0;
+font-family: franklin-regular;
+font-size: 0.9rem;
+font-weight: 700;
+padding: 1rem 0 1rem 0;
+}
+
+.bottom_ads > .col2 > h2 {
+    grid-column: 1/-1;
+    margin: 0;
+    font-family: franklin-regular;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 1rem 0 1rem 0;
+
+}
+
+.bottom_ads > .col2 {
+    display: flex;
+    grid-template-rows: repeat(auto-fit, 3rem);
+    flex-direction: column;
+    font-family: cheltenham-regular;
+    font-weight: 500;
+    font-size: 1.15rem;
+}
+.bottom_ads > .col2 > h2 {
+    align-self: normal;
+
+}
+.bottom_ads > .col2 > a {
+    color: black;
+    text-decoration: none;
+    border-top: 1px solid rgb(206, 206, 206);
+    padding: 1rem 0 1rem 0;
+    
+}
+
+.bottom_ads > .col2 > a:hover {
+    color: rgb(92, 92, 92);
+
+}
+
+/*
+================
+BOTTOM ARTICLES END
+================
+*/
+
+
+
+/*
+================
+FOOTER
+================
+*/
+
+footer {
+
+    display: grid;
+    
+    grid-template-columns: 1fr 3fr 1fr;
+    margin: 100px auto;
+}
+
+.sub_footer {
+    grid-column: 2/span 1;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    
+}
+.sub_footer > img{
+    grid-column: 1/-1;
+    width: 200px;
+}
+
+.sub_footer > .footer_row > .fr_title {
+    font-family: franklin-regular;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.7rem;
+}
+
+.footer_row {
+    display: flex;
+    flex-direction: column;
+    
+}    
+.sub_footer > .footer_row > ul > li {
+    font-family: franklin-regular;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.7rem;
+    cursor: pointer;
+}
+
+.sub_footer > .footer_row > ul.suscribe_bold > li {
+    font-family: franklin-regular;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.sub_footer > .footer_row.dif {
+    border-left: 1px solid rgb(180, 180, 180)
+}
+
+.sub_footer > .footer_row.dif > ul.border {
+    
+    left: 10%;
+    right: 10%;
+    border-top: 1px solid rgb(180, 180, 180)
+
+}
+
+.sub_footer > .footer_bottom_text {
+    padding: 1rem;
+    grid-column: 1/-1;
+
+}
+
+.sub_footer > .footer_bottom_text > ul {
+    display: flex;
+    font-size: 0.7rem;
+    font-family: franklin-regular;
+    font-weight: 500;
+    color: rgb(155, 155, 155);
+    justify-content: center;
+  
+    
+}
+
+.sub_footer > .footer_bottom_text > ul > li {
+   padding: 2rem;
+   cursor: pointer;
+} 
+/*
+================
+FOOTER END
+================
+*/

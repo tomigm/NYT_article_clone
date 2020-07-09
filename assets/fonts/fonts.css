@@ -1,0 +1,64 @@
+
+@font-face {
+    font-family: 'cheltenham-italic';
+    src: url('cheltenham/cheltenham-italic-700.ttf');
+    font-weight: 700;
+    font-style: italic;
+    
+}
+
+@font-face {
+    font-family: 'cheltenham-regular';
+    src: url('cheltenham/cheltenham-normal-500.ttf');
+    font-weight: 500;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'cheltenham-small';
+    src: url('cheltenham/cheltenham-small-normal-400.ttf');
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'imperial-regular';
+    src: url('imperial/imperial-normal-500.ttf');
+    font-weight: 500;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'imperial-regular';
+    src: url('assets/fonts/imperial/imperial-normal-700.ttf');
+    font-weight: 700;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'franklin-regular';
+    src: url('franklin/franklin-normal-300.ttf');
+    font-weight: 300;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'franklin-regular';
+    src: url('franklin/franklin-normal-500.ttf');
+    font-weight: 500;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'franklin-regular';
+    src: url('franklin/franklin-normal-700.ttf');
+    font-weight: 700;
+    font-style: normal;
+    
+}
